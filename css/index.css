@@ -67,21 +67,54 @@ h1, h2, h3, h4, h5 {
 }
 
 
-/* top home*/
+/* top home
+
+Desktop view
+*/
 
 .content {
-	margin: auto;
-	justify-content: center;
-	background:purple;
+    background:purple;
+    margin: auto;
+}
+
+
+header nav{
+    
+        display: flex;
+        height: 65px;
+        flex-wrap: wrap;
+        justify-content: space-between;  
+        align-items: center;
+    }
+
+header #navbar a{
+    display: flex;
+    justify-content: space-around;
+    text-decoration: none;
+    color:black;
+}
+header nav #navbar{
+    width: 600px;
+justify-content:space-between;
+display:flex;
 
 }
+nav #logo{
+
+}
+
+
+
+#bannerSection{
+    justify-content:center;
+}
+/*tablet view*/
 @media(max-width: 800px){
 	.content{
-		width: 800px;
-		background: blue;
+        background: white;
 	}
 	header{
-		width: 800px;
+        width: 800px;
 	}
 	header #headerImage{
 		display:none;
@@ -92,33 +125,90 @@ h1, h2, h3, h4, h5 {
 	#navbar, #logo {
 		display: flex;
 		height: 65px;
-		flex-wrap: wrap;
 		justify-content: space-around;
 		align-items: center;
-	}
+    }
+
+
+    #upperSection{
+        display:flex;
+        flex-flow: row nowrap;
+        margin: 30px 0px 30px 0px;
+        padding-bottom: 10px;
+    }
+    #features, #about{
+        padding-bottom: 30px;
+        width: 398px;
+    }
+    
+    #lowerSection {
+        display: flex;
+        flex-flow: row nowrap;
+        margin: 30px 0px 30px 0px;
+    }
+    
+    #services, #product, #vision {
+        width: 265px;
+    }
+    
+
 
 }
 
 
+/*mobile view*/
 
 
 
 @media(max-width: 500px){
 	.content{
 		width: 500px;
-		background:green;
-	}
+        background:yellow;
+    }
+        header{
+            width: 500px;
+        }
+        header #headerImage{
+            display:none;
+        }
+        #bannerSection{
+            justify-content:center;
+        }
+        #navbar, #logo {
+            display: flex;
+            height: 65px;
+            justify-content: space-around;
+            align-items: center;
+        }
+        #upperSection{
+            display:flex;
+            flex-flow: row nowrap;
+            margin: 30px 0px 30px 0px;
+            padding-bottom: 10px;
+        }
+        #features, #about{
+            padding-bottom: 30px;
+            width: 498px;
+        }
+        
+        #lowerSection {
+            display: flex;
+            flex-flow: row wrap;
+            margin: 30px 0px 30px 0px;
+        }
+        
+        #services, #product, #vision {
+            width: 498px;
+            padding-bottom: 30px;
+
+        }
+	
 }
 
 
 
-#navbar {
-	display: flex;
-	height: 65px;
-	flex-wrap: wrap;
-/*	justify-content: space-between;  desktop view*/
-	align-items: center;
-}
+
+
 
 .navLink {
 	color: lightslategrey;
@@ -128,8 +218,8 @@ h1, h2, h3, h4, h5 {
 
 #bannerSection {
 	height: 480px;
-	border-bottom: 1px solid black;
-	margin: 0px 0px 30px 0px;
+	border-bottom: 2px solid black;
+	margin: 40px 0px 0px 0px;
 	display: flex;
 	/* justify-content: space-between;  for desktop view*/
 	align-items: center;
@@ -150,14 +240,14 @@ h1, h2, h3, h4, h5 {
 }
 
 #getStarted {
-	height: 20px;
+	height: 30px;
 	width: 150px;
 	color: white;
 	font-size: 14px;
 	border: 1px solid black;
-	padding: 2px;
+	padding: 5px;
 	text-decoration: none;
-	background-color: lightsteelblue;
+	background-color: lightcoral;
     animation-name: example;
 	animation-duration: 2s;
 	animation-iteration-count: infinite;
@@ -167,25 +257,25 @@ h1, h2, h3, h4, h5 {
 
 #upperSection {
 	display: flex;
-	flex-flow: row wrap;
-	align-items: center;
-	margin: 0px 0px 30px 0px;
+    flex-flow: row wrap;
+    align-items: space-between;
+	margin: 30px 0px 30px 0px;
 }
 
-#features {
+/* #features {
 	width: 440px;
 }
 
 #about {
 	width: 440px;
 }
-
+for desktop view
 
 
 #lowerSection {
 	display: flex;
 	flex-flow: row wrap;
-	align-items: center;
+	align-items: space-between;
 	margin: 30px 0px 30px 0px;
 }
 
@@ -200,9 +290,10 @@ h1, h2, h3, h4, h5 {
 #vision {
 	width: 290px;
 }
+*/
 
 #address {
-	border-top: 1px solid black;
+	border-top: 2px solid black;
 	width: 290;
 	padding: 40px 0px 0px 0px;
 }
@@ -210,7 +301,8 @@ h1, h2, h3, h4, h5 {
 #footer {
 	text-align: center;
 	margin: 28px 0px;
-	font-size: 14px;
+    font-size: 14px;
+    padding-bottom: 40px;
 }
 
 
@@ -223,7 +315,7 @@ h1, h2, h3, h4, h5 {
 
 
 
-/* services css */
+/* services css 
 
 #aboutServices {
 	padding: 46px 0px;
@@ -284,3 +376,4 @@ h1, h2, h3, h4, h5 {
 }
 
 
+*/
